@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Book List </title>
+  </head>
+  <body>
+    <div id='main'></div>
+
+
+    <script type='text/template' id='BookViewTemplate'>
+      <h2> <%= title %> </h2>
+      <h3> <%= author %> </h3>
+      <p> 
+        <button class='edit'> Edit </button> 
+        <button class='remove'> Remove </button> 
+      </p>
+    </script>
+
+    <script type='text/template' id='BooksViewTemplate'>
+      <h1> Book List (<span><%= length %></span>)</h1>
+
+      <p> <a class='nav' href='/add'> Add Book </a> </p>
+
+      <ul></ul>
+    </script>
+
+    <script type='text/template' id='AddBookViewTemplate'>
+        <h1> Add Book </h1>
+        <p> Title: <input id='title' /> </p>
+        <p> Author: <input id='author' /> </p>
+        <p> <button class='add'> Add New Book </button> </p>
+    </script>
+
+    <script type='text/template' id='EditBookViewTemplate'>
+        <h1> Update Book </h1>
+        <p> Title: <input id='title' value='<%= title %>' /> </p>
+        <p> Author: <input id='author' value='<%= author %>' /> </p>
+        <p> <button class='update'> Update Book </button> </p>
+    </script>
+
+    <script src='/lib/jquery/dist/jquery.js'></script>
+    <script src='/lib/underscore/underscore.js'></script>
+    <script src='/lib/backbone/backbone.js'></script>
+    <script src='/app.js'></script>
+  </body>
+</html>
