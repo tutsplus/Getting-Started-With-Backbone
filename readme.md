@@ -5,4 +5,4 @@ There are many front-end libraries to choose from when you're building a web app
 
 Source files for the Tuts+ course: [Getting Started With Backbone](https://code.tutsplus.com/courses/getting-started-with-backbone)
 
-**Read this tutorial on [Tuts+](https://code.tutsplus.com)**
+**Take this course on [Tuts+](https://code.tutsplus.com/courses)**
